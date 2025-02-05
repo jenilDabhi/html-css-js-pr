@@ -285,3 +285,200 @@ nav li a:hover {
     border-radius: 20px;
     letter-spacing: 1.5px;
 }
+
+
+/* ABOUT */
+
+
+.about {
+    background-image: url(../images/pattern1.webp);
+    background-repeat: repeat;
+    padding: 90px 0;
+}
+
+.about-img img {
+    border-radius: 50px;
+    max-width: 390px;
+    overflow: hidden;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    border-radius: 50px;
+}
+
+.about-img {
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.about-img img:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content h4 {
+    font-family: fantasy;
+    color: red;
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.about-content {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding-bottom: 12px;
+}
+
+.about-content p {
+    color: gray;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 29px;
+    letter-spacing: 1.6px;
+    padding-bottom: 20px;
+    max-width: 700px;
+}
+
+.about-content a {
+    color: black;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.about-content a:hover {
+    color: red;
+    transition: 0.3s all ease-in-out;
+
+}
+
+/* DICOVER */
+
+
+.discover {
+    background-image: url(../images/bg-intro-01.webp);
+    background-repeat: no-repeat;
+    background-position: center 113.333px;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.discover-content {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 190px 0;
+}
+
+.discover-content h3 {
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+}
+
+.discover-content h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+}
+
+
+/* FOOD  */
+
+.food {
+    background-image: url(../images/pattern1.webp);
+    background-repeat: repeat;
+    padding: 90px 0;
+}
+
+.foods-items {
+    /* box-shadow: rgba(17, 11, 11, 0.24) 0px 3px 8px; */
+    border-radius: 10px;
+    margin: 0 17px 0 0;
+}
+
+.first-item {
+    margin-bottom: 20px;
+}
+
+.foods-img img {
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+}
+
+.foods-img {
+    overflow: hidden;
+}
+
+.foods-img img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.foods-content {
+    padding: 10px 0;
+}
+
+.foods-content a:first-child {
+    font-size: 26px;
+    color: rgb(24, 23, 23);
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.foods-content a:first-child:hover {
+    color: red;
+}
+
+.foods-content p {
+    color: rgb(109, 104, 104);
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.foods-content a:last-child {
+    color: rgb(45, 44, 44);
+    letter-spacing: 1.3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.foods-content a:last-child:hover {
+    color: white;
+    background-color: rgb(201, 32, 32);
+    padding: 10px 19px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
