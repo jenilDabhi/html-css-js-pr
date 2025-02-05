@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON-CSS */
+
+:root {
+    --swiper-navigation-size: 20px;
+}
+
+body {
+    font-family: 'Tomorrow';
+}
+
+.d-flex {
+    display: flex;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.w-3 {
+    width: 33.33%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    max-width: 1399px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.btn1 a,
+.btn a {
+    margin: 0 14px;
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.btn1 {
+    position: relative;
+    -o-transition: all, 0.7s;
+    margin-left: 40px;
+
+}
+
+
+.btn1,
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    padding: 14px 32px 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn1::before,
+.btn::before {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid red;
+    border-top: 2px solid aliceblue;
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+
+}
+
+.btn1::after,
+.btn::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid red;
+    border-bottom: 2px solid aliceblue;
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+}
+
+.navigation nav ul li:first-child a {
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
+.btn1:hover::after,
+.btn:hover::after {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.btn1:hover::before,
+.btn:hover::before {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ||| HEADER ||| */
+
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 5px solid #ec1d25;
+}
+
+
+nav ul {
+    display: flex;
+
+}
+
+nav li a {
+    margin: 0 20px;
+    color: rgb(14, 15, 16);
+    font-weight: 400;
+    transition: 0.3s all ease-in-out;
+
+}
+
+nav li a:hover {
+    border-bottom: 2px solid red;
+    transition: 0.3s all ease-in-out;
+    padding-bottom: 10px;
+}
+
+.toggle a {
+    display: none;
+}
+
+.icons a {
+    color: #222222;
+    margin-right: 10px;
+    transition: 0.4s all;
+
+}
+
+.icons a:hover {
+    color: #d61c22;
+}
+
+
+/* SLIDER */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide img {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination {
+    color: aliceblue;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.swiper-button-next {
+    color: #b3a8a9;
+
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 44px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: #999393;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:after {
+    opacity: 0.6;
+    color: #999393;
+}
+
+.banner-items {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    z-index: 999;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    padding: 40px 0;
+}
+
+.content h3 {
+    font-family: cursive;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+}
+
+.content a {
+    font-weight: 300;
+    color: white;
+    font-size: 13px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+}
